@@ -3187,7 +3187,7 @@ body.hidden-scroll {
 header {
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     z-index: 1000;
     background: #fff
@@ -3593,7 +3593,7 @@ header .logo {
 
     .linefade:after {
         left: 100%;
-        width: 1900px
+        width: 11%;
     }
 
     .topnav {
