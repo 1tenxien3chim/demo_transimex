@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo Transimex</title> 
+	<link rel="stylesheet" href="css/library.css">
+	<script src="js/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<header class="">
+		<div class="container">
+			<div class="logo hidden-xs"><a class="block" href="/" title="transimex"><img src="img/logo.png" alt="transimex"></a></div>
+			<div class="right-header">
+				<div class="topnav block-clf">
+					<div class="dropdown language hidden-xs">
+						<a class="current" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Tiếng Việt
+							<span class="fa fa-angle-down"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="/en/" title="English">English</a></li>
+							<li><a href="/" title="Tiếng Việt">Tiếng Việt</a></li>
+						</ul>
+					</div>
+					<ul class="menu-fn">
+						<li><a id="hl_Member" title="Đăng nhập" href="">Đăng nhập</a> </li>
+						<li><a href="" title="Liên hệ">Liên hệ</a></li>
+						<li><a href="" title="Hỗ trợ khách hàng">Hỗ trợ khách hàng</a></li>
+					</ul>
+				</div>
+				<div class="linefade hidden-xs"></div>
+				<a class="block logo visible-xs" href="/"><img src="img/logo.svg" alt="transimex"></a>
+				<div class="navigate">
+					<div class="header-menu visible-xs"><a class="block" href="/"><img src="img/logo.svg" alt="transimex"></a></div>
+					<ul class="menu">
+						<li id="menuDefault" class="active"><a href="/" title="Trang chủ">Trang chủ</a></li>
+						
+                        <li id="menuAbout" class="drop"><a href="" title="Giới thiệu">Giới thiệu <i class="fa fa-angle-down"></i></a>
+                         <ul>
+                        
+                               <li><a href="" title="Giới thiệu công ty">Giới thiệu công ty</a></li>
+                        	
+                               <li><a href="" title="Tầm nhìn - Sứ mệnh - Giá trị cốt lõi">Tầm nhìn - Sứ mệnh - Giá trị cốt lõi</a></li>
+                        	
+                               <li><a href="" title="Sơ đồ tổ chức">Sơ đồ tổ chức</a></li>
+                        	
+                               <li><a href="" title="Lịch sử phát triển">Lịch sử phát triển </a></li>
+                        	 <li><a href="" title="Ban lãnh đạo">Ban lãnh đạo </a></li>
+                        	 <li><a href="" title="Các công ty thành viên - Liên doanh - Liên kết">Các công ty thành viên - Liên doanh - Liên kết </a></li>
+                        	<li class="drop"><a href="" title="Thư viện">Thư viện <i class="fa fa-angle-down"></i></a>
+                                   <ul>
+                                        <li><a href="" title="Hình ảnh">Hình ảnh</a></li>	
+                                        <li><a href="" title="Video">Video</a></li>	
+                                   </ul>
+                               </li>
+                          </ul>
+						</li>
+                        
+                        <li id="menuServices" class="drop"><a href="" title="Giải pháp lưu trữ chứng từ doanh nghiệp">Dịch vụ <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                           	
+                                            <li><a href="" title="Giải pháp lưu trữ chứng từ doanh nghiệp">Giải pháp lưu trữ chứng từ doanh nghiệp</a></li>
+                        	            
+                                            <li><a href="" title="Giao Nhận Vận Tải Quốc Tế">Giao Nhận Vận Tải Quốc Tế</a></li>
+                        	            
+                                <li class="drop"><a href="" title="Kho Bãi và Phân Phối">Kho Bãi và Phân Phối <i class="fa fa-angle-down"></i></a>
+                                     
+                                   <ul>
+                                        
+                                                    <li><a href="" title="Dịch vụ kho hàng và phân phối">Dịch vụ kho hàng và phân phối</a></li>	
+                                            
+                                                    <li><a href="" title="Kho lạnh">Kho lạnh</a></li>	
+                                            
+                                                    <li><a href="" title="Kho ngoại quan">Kho ngoại quan</a></li>	
+                                            
+                                                    <li><a href="" title="Trung tâm phân phối">Trung tâm phân phối</a></li>	
+                                            
+                                        </ul>
+                                   
+                               </li>
+                                           
+                                <li class="drop"><a href="" title="Vận Tải Đường Bộ">Vận Tải Đường Bộ <i class="fa fa-angle-down"></i></a>
+                                     
+                                   <ul>
+                                        
+                                                    <li><a href="" title="Xe tải nhỏ phân phối">Xe tải nhỏ phân phối</a></li>	
+                                            
+                                                    <li><a href="" title="Xe đầu kéo container">Xe đầu kéo container</a></li>	
+                                            
+                                        </ul>
+                                   
+                               </li>
+                                           
+                                            <li><a href="" title="Hàng dự án">Hàng dự án</a></li>
+                        	            
+                                            <li><a href="" title="Dịch vụ logistics tích hợp">Dịch vụ logistics tích hợp</a></li>
+                        	            
+                                <li class="drop"><a href="" title="Đại lý Hãng tàu Dongjin">Đại lý Hãng tàu Dongjin <i class="fa fa-angle-down"></i></a>
+                                     
+                                   <ul>
+                                        
+                                                    <li><a href="" title="Thông báo">Thông báo</a></li>	
+                                            
+                                                    <li><a href="" title="Lịch tàu">Lịch tàu</a></li>	
+                                            
+                                                    <li><a href="" title="Biểu giá">Biểu giá</a></li>	
+                                            
+                                                    <li><a href="" title="Tuyến dịch vụ và Liên hệ">Tuyến dịch vụ và Liên hệ</a></li>	
+                                            
+                                        </ul>
+                                   
+                               </li>
+                                           
+                                            <li><a href="" title="Dịch vụ Vận tải thủy">Dịch vụ Vận tải thủy</a></li>
+                        	            
+                                            <li><a href="" title="Dịch vụ cảng ICD">Dịch vụ cảng ICD</a></li>
+                        	            
+                                            <li><a href="" title="Bất động sản">Bất động sản</a></li>
+                        	            
+                        
+                        </ul>
+                        </li>
+                        
+                         <li id="menuNews" class="drop"><a href="" title="Kỷ niệm 40 năm thành lập công ty">Tin tức <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                              
+                               <li><a href="" title="Kỷ niệm 40 năm thành lập công ty">Kỷ niệm 40 năm thành lập công ty</a></li>
+                        	
+                               <li><a href="" title="Số hóa, chuyển đổi số">Số hóa, chuyển đổi số</a></li>
+                        	
+                               <li><a href="" title="Thông tin chuyên ngành">Thông tin chuyên ngành</a></li>
+                        	
+                               <li><a href="" title="Thông tin báo chí">Thông tin báo chí</a></li>
+                        	
+                               <li><a href="" title="Ebook &amp; Whitepaper ">Ebook &amp; Whitepaper </a></li>
+                        	
+                               <li><a href="" title="Thông tin Transimex">Thông tin Transimex</a></li>
+                        	
+                               <li><a href="" title="TMS Profile &amp; Brochure">TMS Profile &amp; Brochure</a></li>
+                        	
+                                </ul>
+                         </li>
+                        
+                         <li id="menuShareholder" class="drop"><a href="" title="Báo cáo quản trị Công ty">Cổ đông <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                              
+                               <li><a href="" title="Báo cáo quản trị Công ty">Báo cáo quản trị Công ty</a></li>
+                        	
+                               <li><a href="" title="Thông báo">Thông báo</a></li>
+                        	
+                               <li><a href="" title="Quy chế công ty">Quy chế công ty</a></li>
+                        	
+                               <li><a href="" title="Điều lệ công ty">Điều lệ công ty</a></li>
+                        	
+                               <li><a href="" title="Bản cáo bạch">Bản cáo bạch</a></li>
+                        	
+                               <li><a href="" title="Nghị quyết">Nghị quyết</a></li>
+                        	
+                               <li><a href="" title="Thông tin cổ đông - nhà đầu tư">Thông tin cổ đông - nhà đầu tư</a></li>
+                        	
+                               <li><a href="" title="Thông tin đại hội cổ đông">Thông tin đại hội cổ đông</a></li>
+                        	
+                               <li><a href="" title="Báo cáo thường niên">Báo cáo thường niên</a></li>
+                        	
+                               <li><a href="" title="Báo cáo tài chính">Báo cáo tài chính</a></li>
+                        	
+                                </ul>
+                         </li>
+                        
+                        <li id="menuHumanResource" class="drop">
+                            <a href="" title="Nhân lực">Nhân lực <i class="fa fa-angle-down"></i></a>
+                           <ul>
+                               
+                           	    <li><a href="" title="Thỏa ước Lao động tập thể">Thỏa ước Lao động tập thể </a></li>
+                        	    
+                           	    <li><a href="" title="Nội quy lao động">Nội quy lao động </a></li>
+                        	    
+                           	    <li><a href="" title="Chính sách lao động">Chính sách lao động </a></li>
+                        	    <li><a href="" title="Tuyển dụng">Tuyển dụng </a></li>
+                            </ul>
+                        </li>
+                        <li id="menuCommunity"><a href="" title="Cộng đồng">Cộng đồng</a></li>
+						
+                        	
+					</ul>
+				</div>
+			<div class="bg-overlay"></div></div>
+		</div>
+		<div class="sticky-anchor"></div>
+		<nav class="mb-nav">
+			<a class="btn-nav left" data-text="MENU"><i class="fa fa-bars"></i></a>
+			<div class="dropdown language visible-xs">
+				<a class="current" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Tiếng Việt
+					<span class="fa fa-angle-down"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="/en/" title="English">English</a></li>
+					<li><a href="/" title="Tiếng Việt">Tiếng Việt</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section class="banner-lg block-bg bg-fixed stellar" data-stellar-background-ratio="0.1" style="background-image:url(/img/transimex_tin-tuc_13282023_112844.jpg)"></section>
+	<section class="mainer">
+		<article class="container mb40 anim" data-animate-name="fadeInUp">
+		  <h1 class="tt-md tt-ss text-center">Kỷ niệm 40 năm thành lập công ty</h1>
+		  <div class="block-clf news-container">
+			<ul class="nav nav-tabs tab-full tab-link text-left">
+			  <li class="active">
+				<a href="/tin-tuc/q?key=&Year=2023&Cate=ky-niem-40-nam-thanh-lap-cong-ty" title="Năm 2023">Năm 2023</a>
+			  </li>
+			</ul>
+			<div class="tab-content">
+			  <div class="news-item-block block-clf">
+				<a href="/tin-tuc/le-ky-niem-40-nam-thanh-lap-cong-ty-co-phan-transimex-40-nam-khong-ngung-huong-den-su-xuat-sac-61326.html" title="LỄ KỶ NIỆM 40 NĂM THÀNH LẬP CÔNG TY CỔ PHẦN TRANSIMEX - 40 NĂM KHÔNG NGỪNG HƯỚNG ĐẾN SỰ XUẤT SẮC" class="absolute"></a>
+				<div class="thumb-res" style="background-image: url(/css/logoimg.png);"></div>
+				<div class="info">
+				  <div class="text-disable">03/06/2023</div>
+				  <div class="ellips">
+					<div class="tt tt-default">LỄ KỶ NIỆM 40 NĂM THÀNH LẬP CÔNG TY CỔ PHẦN TRANSIMEX - 40 NĂM KHÔNG NGỪNG HƯỚNG ĐẾN SỰ XUẤT SẮC</div> “Hãy sát vai nhau qua nghìn trùng xa xôi Dù có phong ba mây mù giăng khắp lối Hãy vững tin mang sứ mệnh đi muôn nơi Hãy cứ vươn xa không ngần ngại bước tới Hạnh phúc sẽ luôn bên ai còn nguyên ý chí Mặc những khó khăn chông gai phủ kín lối đi Hãy cứ khát khao bên giọt mồ hôi tuôn rơi Hãy cứ ước mơ cho một ngày mai ra khơi”
+				  </div>
+				  <div class="detail-label text-color2">Xem chi tiết <span class="fa fa-angle-double-right"></span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="news-item-block block-clf">
+				<a href="/tin-tuc/bai-ca-transimex-61325.html" title="BÀI CA TRANSIMEX" class="absolute"></a>
+				<div class="thumb-res" style="background-image: url(/css/logoimg.png);"></div>
+				<div class="info">
+				  <div class="text-disable">27/05/2023</div>
+				  <div class="ellips">
+					<div class="tt tt-default">BÀI CA TRANSIMEX</div>
+				  </div>
+				  <div class="detail-label text-color2">Xem chi tiết <span class="fa fa-angle-double-right"></span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="news-item-block block-clf">
+				<a href="/tin-tuc/transimex-40-nam-chuyen-chang-logistics-61324.html" title="TRANSIMEX 40 NĂM “CHUYỆN CHÀNG LOGISTICS”" class="absolute"></a>
+				<div class="thumb-res" style="background-image: url(/css/logoimg.png);"></div>
+				<div class="info">
+				  <div class="text-disable">15/04/2023</div>
+				  <div class="ellips">
+					<div class="tt tt-default">TRANSIMEX 40 NĂM “CHUYỆN CHÀNG LOGISTICS”</div> Nhắc đến logistics, hình ảnh xuất hiện sẽ là những chiếc xe vận tải với chiếc romooc dài thật dài phía sau; là hình ảnh những chiếc container xếp dày đặc ngoài bến cảng hay trên những con tàu xuyên đại dương, là những chiếc cần cẩu, những thiết bị nâng hạ, những nhà kho hiện đại, những chiếc máy bay đầy ắp hàng hóa, ... Và người làm logistics là những anh chàng mặc đồng phục cầm hồ sơ có mặt khắp các cảng biển, ICD, sân bay và tại những kho hàng hóa của khách hàng.
+				  </div>
+				  <div class="detail-label text-color2">Xem chi tiết <span class="fa fa-angle-double-right"></span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="news-item-block block-clf">
+				<a href="/tin-tuc/transimex-40-nam-hanh-trinh-vuot-qua-thach-thuc-61323.html" title="TRANSIMEX 40 NĂM - HÀNH TRÌNH VƯỢT QUA THÁCH THỨC" class="absolute"></a>
+				<div class="thumb-res" style="background-image: url(/css/logoimg.png);"></div>
+				<div class="info">
+				  <div class="text-disable">31/03/2023</div>
+				  <div class="ellips">
+					<div class="tt tt-default">TRANSIMEX 40 NĂM - HÀNH TRÌNH VƯỢT QUA THÁCH THỨC</div> Logistics không chỉ là vận chuyển. Kết quả của logistics không chỉ là hàng hóa đến tay khách hàng và lưu thông hàng hóa thuận lợi trên toàn thế giới mà là sự hài lòng một cách trọn vẹn của tất cả các bên liên quan trên hành trình đó. Chính vì vậy, logistics là hành trình của sự bền bỉ, kiên nhẫn, tinh tế, chỉn chu, đồng bộ, sáng tạo và kỷ luật cao.
+				  </div>
+				  <div class="detail-label text-color2">Xem chi tiết <span class="fa fa-angle-double-right"></span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="news-item-block block-clf">
+				<a href="/tin-tuc/40-nam-transimex-khong-ngung-hoan-thien-61322.html" title="40 NĂM TRANSIMEX KHÔNG NGỪNG HOÀN THIỆN" class="absolute"></a>
+				<div class="thumb-res" style="background-image: url(/css/logoimg.png);"></div>
+				<div class="info">
+				  <div class="text-disable">15/03/2023</div>
+				  <div class="ellips">
+					<div class="tt tt-default">40 NĂM TRANSIMEX KHÔNG NGỪNG HOÀN THIỆN</div> Logistics là huyết mạch của nền kinh tế. Trong bối cảnh toàn cầu hóa ngày càng mạnh mẽ, sự phân công lao động trên thế giới ngày càng sâu sắc và biến đổi nhanh chóng, cùng với sự phát triển của khoa học công nghệ, logistics là ngành giàu tiềm năng phát triển và bứt phá nhưng cũng chứa đựng không ít thách thức. Thách thức đó là nhu cầu ngày càng đa dạng, tinh tế, chuyên biệt và nghiêm ngặt của khách hàng khi hàng hóa phục vụ cho nhu cầu của con người ngày càng đa dạng và mới mẻ. Thách thức đó là sự phát triển ngày càng nhanh của khoa học kỹ thuật và công nghệ tác động đến hạ tầng và cách thức vận hành của ngành logistics. Thách thức đó là sự cạnh tranh ngày càng lớn giữa các doanh nghiệp trong ngành khi hệ giá trị khác biệt ngày càng xích gần lại.
+				  </div>
+				  <div class="detail-label text-color2">Xem chi tiết <span class="fa fa-angle-double-right"></span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="news-item-block block-clf">
+				<a href="/tin-tuc/transimex-40-nam-nhung-chuyen-lan-dau-duoc-ke-61321.html" title="TRANSIMEX 40 NĂM - NHỮNG CHUYỆN LẦN ĐẦU ĐƯỢC KỂ" class="absolute"></a>
+				<div class="thumb-res" style="background-image: url(/css/logoimg.png);"></div>
+				<div class="info">
+				  <div class="text-disable">28/02/2023</div>
+				  <div class="ellips">
+					<div class="tt tt-default">TRANSIMEX 40 NĂM - NHỮNG CHUYỆN LẦN ĐẦU ĐƯỢC KỂ</div> “Hãy cho tôi một điểm tựa, tôi sẽ nhấc bổng quả đất lên” - (Archimedes)
+				  </div>
+				  <div class="detail-label text-color2">Xem chi tiết <span class="fa fa-angle-double-right"></span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="news-item-block block-clf">
+				<a href="/tin-tuc/ky-niem-40-nam-thanh-lap-0361983-0362023-transimex-fun-run-2023-recap-61301.html" title="KỶ NIỆM 40 NĂM THÀNH LẬP (03/6/1983-03/6/2023) - TRANSIMEX FUN RUN 2023 (RECAP)" class="absolute"></a>
+				<div class="thumb-res" style="background-image: url(/css/logoimg.png);"></div>
+				<div class="info">
+				  <div class="text-disable">20/02/2023</div>
+				  <div class="ellips">
+					<div class="tt tt-default">KỶ NIỆM 40 NĂM THÀNH LẬP (03/6/1983-03/6/2023) - TRANSIMEX FUN RUN 2023 (RECAP)</div> Cùng nhìn lại những hình ảnh của TRANSIMEX FUN RUN - chương trình đầu tiên trong chuỗi các sự kiện chào mừng 40 năm thành lập Công ty Cổ phần Transimex.
+				  </div>
+				  <div class="detail-label text-color2">Xem chi tiết <span class="fa fa-angle-double-right"></span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="news-item-block block-clf">
+				<a href="/tin-tuc/transimex-40-nam-niem-tin-cua-khach-hang-den-tu-dau-61320.html" title="TRANSIMEX 40 NĂM - NIỀM TIN CỦA KHÁCH HÀNG ĐẾN TỪ ĐÂU?" class="absolute"></a>
+				<div class="thumb-res" style="background-image: url(/css/logoimg.png);"></div>
+				<div class="info">
+				  <div class="text-disable">15/02/2023</div>
+				  <div class="ellips">
+					<div class="tt tt-default">TRANSIMEX 40 NĂM - NIỀM TIN CỦA KHÁCH HÀNG ĐẾN TỪ ĐÂU?</div> Niềm tin của khách hàng là một trong những giá trị vô hình nhưng vô giá với một doanh nghiệp. Khi mọi điều thuận lợi, niềm tin của khách hàng là động lực để chúng ta không ngừng hoàn thiện tổ chức, hoàn thiện sản phẩm để phục vụ khách hàng tốt hơn. Khi đứng trước thử thách, niềm tin của khách hàng là điểm tựa để chúng ta vượt qua khó khăn.
+				  </div>
+				  <div class="detail-label text-color2">Xem chi tiết <span class="fa fa-angle-double-right"></span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="news-item-block block-clf">
+				<a href="/tin-tuc/transimex-40-nam-khong-ngung-huong-den-su-hoan-hao-61279.html" title="TRANSIMEX - 40 NĂM KHÔNG NGỪNG HƯỚNG ĐẾN SỰ HOÀN HẢO" class="absolute"></a>
+				<div class="thumb-res" style="background-image: url(/Images/News/transimex_transimex-40-nam-khong-ngung-huong-den-su-hoan-hao_thumb_31542022_095420.jpg);"></div>
+				<div class="info">
+				  <div class="text-disable">01/01/2023</div>
+				  <div class="ellips">
+					<div class="tt tt-default">TRANSIMEX - 40 NĂM KHÔNG NGỪNG HƯỚNG ĐẾN SỰ HOÀN HẢO</div> Khát vọng chinh phục đỉnh cao là khát vọng vươn đến sự hoàn hảo. Những con người mạnh mẽ, bằng khát khao mãnh liệt luôn tiến tới phía trước chinh phục liên tiếp những đỉnh cao chính là những người không ngừng hướng đến sự hoàn hảo.
+				  </div>
+				  <div class="detail-label text-color2">Xem chi tiết <span class="fa fa-angle-double-right"></span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</article>
+	  </section>
+	  <script>
+		$(function() {
+		  $('#menu').addClass('active');
+		});
+	  </script>
+	<footer>
+	  <article class="container">
+	    <div class="row">
+	      <div class="col-sm-4 col-footer">
+	        <div class="tt-xs upper">Giới thiệu</div>
+	        <div class="content">
+	          <ul class="list-style-angle">
+	            <li>
+	              <a href="" title="Giới thiệu công ty">Giới thiệu công ty</a>
+	            </li>
+	            <li>
+	              <a href="" title="Tầm nhìn - Sứ mệnh - Giá trị cốt lõi">Tầm nhìn - Sứ mệnh - Giá trị cốt lõi</a>
+	            </li>
+	            <li>
+	              <a href="" title="Lịch sử phát triển">Lịch sử phát triển</a>
+	            </li>
+	            <li>
+	              <a href="" title="Sơ đồ tổ chức">Sơ đồ tổ chức</a>
+	            </li>
+	          </ul>
+	          <ul class="list-style-angle">
+	            <li>
+	              <a href="" title="Ban lãnh đạo">Ban lãnh đạo</a>
+	            </li>
+	            <li>
+	              <a href="" title="Các công ty thành viên - Liên doanh - Liên kết">Các công ty thành viên - Liên doanh - Liên kết</a>
+	            </li>
+	            <li>
+	              <a href="" title="Thư viện">Thư viện</a>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	      <div class="col-sm-4 col-footer">
+	        <div class="tt-xs upper">Dịch vụ</div>
+	        <div class="content">
+	          <ul class="list-style-angle">
+	            <li>
+	              <a href="" title="Giao Nhận Vận Tải Quốc Tế">Giao Nhận Vận Tải Quốc Tế</a>
+	            </li>
+	            <li>
+	              <a href="" title="Kho Bãi và Phân Phối">Kho Bãi và Phân Phối</a>
+	            </li>
+	            <li>
+	              <a href="" title="Vận Tải Đường Bộ">Vận Tải Đường Bộ</a>
+	            </li>
+	            <li>
+	              <a href="" title="Hàng Dự Án">Hàng Dự Án</a>
+	            </li>
+	            <li>
+	              <a href="" title="Dịch Vụ Logistics Tích Hợp">Dịch Vụ Logistics Tích Hợp</a>
+	            </li>
+	          </ul>
+	          <ul class="list-style-angle">
+	            <li>
+	              <a href="" title="Đại lý Hãng tàu Dongjin">Đại lý Hãng tàu Dongjin</a>
+	            </li>
+	            <li>
+	              <a href="" title="Dịch vụ Vận tải thủy">Dịch vụ Vận tải thủy</a>
+	            </li>
+	            <li>
+	              <a href="" title="Dịch Vụ Cảng ICD">Dịch Vụ Cảng ICD</a>
+	            </li>
+	            <li>
+	              <a href="" title="Bất Động Sản">Bất Động Sản</a>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	      <div class="col-sm-4 col-footer">
+	        <div class="tt-xs upper">Đăng ký nhận bản tin</div>
+	        <div class="content">
+	          <div class="form-email mb20">
+	            <input type="text" class="inputText" placeholder="Email của bạn" id="txtEmailNewsletter">
+	            <input type="text" id="txtvdEmailError" value="Vui lòng nhập đúng email của bạn" style="display:none" />
+	            <span class="btn bg-warning" id="btEmailNewsletter">Đăng ký</span>
+	          </div>
+	          <nav class="social">
+	            <a href="" target="_blank" class="fa fa-facebook"></a>
+	            <a href="" target="_blank" class="fa fa-youtube"></a>
+	          </nav>
+	        </div>
+	      </div>
+	    </div>
+	  </article>
+	  <article class="copy">
+	    <div class="container text-center"> Copyright © 2017 TRANSIMEX. <span style="white-space: nowrap;">All Rights Reserved</span>. <span style="white-space: nowrap;">Powered by <a href="http://bizmac.com.vn" title="Thiết kế website chuyên nghiệp" target="_blank" style="color: inherit;">BizMaC</a>
+	      </span>
+	    </div>
+	  </article>
+	</footer>
+
+	<script src="js/website.js"></script>
+   <script src="js/bzUti.js"></script>
+   <script src="js/bzAjax.js"></script>
+   <link href="css/sweetalert.css" rel="stylesheet" />
+   <script src="js/sweetalert.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/smoothscroll.min.js"></script>
+<script src="js/stellar.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+    <script type="text/javascript">
+        $(function () {
+            $('#menuDefault').addClass('active');
+            $(".home-slider").slick({
+                dots: true,
+                speed: 700,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                pauseOnHover: false,
+                draggable: false,
+                cssEase: 'cubic-bezier(0.755, 0.005, 0.200, 1.000)',
+            });
+            $(".carousel-logo").slick({
+                arrows: true,
+                slidesToShow: 6,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 6,
+                    }
+                }, {
+                    breakpoint: 980,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5,
+                    }
+                }, {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                }]
+            });
+        });
+</script>
+</html>
