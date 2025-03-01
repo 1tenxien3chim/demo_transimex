@@ -591,7 +591,7 @@ a[href].absolute,a[href].absolute-center,a[href].thumb-res:before {
 }
 
 .btn.bg-warning,.btn.bg-warning:hover,.btn.bg-warning:focus,.btn.bg-warning.focus {
-    background-color: #f76e0c
+    background-color: #014bac;
 }
 
 .btn.bg-success,.btn.bg-success:hover,.btn.bg-success:focus,.btn.bg-success.focus {
@@ -3522,12 +3522,12 @@ header .logo {
         left: 0;
         pointer-event: none;
         background: #fff;
-        background: -moz-linear-gradient(left, #fff 0%, rgba(255,255,255,0.8) 15%, #8cc73f 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, #fff), color-stop(15%, rgba(255,255,255,0.8)), color-stop(100%, #8cc73f));
-        background: -webkit-linear-gradient(left, #fff 0%, rgba(255,255,255,0.8) 15%, #8cc73f 100%);
-        background: -o-linear-gradient(left, #fff 0%, rgba(255,255,255,0.8) 15%, #8cc73f 100%);
-        background: -ms-linear-gradient(left, #fff 0%, rgba(255,255,255,0.8) 15%, #8cc73f 100%);
-        background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0.8) 15%, #8cc73f 100%);
+        background: -moz-linear-gradient(left, #fff 0%, rgba(255,255,255,0.8) 15%, #014bac 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #fff), color-stop(15%, rgba(255,255,255,0.8)), color-stop(100%, #014bac));
+        background: -webkit-linear-gradient(left, #fff 0%, rgba(255,255,255,0.8) 15%, #014bac 100%);
+        background: -o-linear-gradient(left, #fff 0%, rgba(255,255,255,0.8) 15%, #014bac 100%);
+        background: -ms-linear-gradient(left, #fff 0%, rgba(255,255,255,0.8) 15%, #014bac 100%);
+        background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0.8) 15%, #014bac 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#8cc73f', GradientType=1 );
         transition: all 0.3s ease
     }
@@ -3897,7 +3897,7 @@ footer>.container {
 }
 
 footer .tt-xs {
-    color: #f8992f;
+    color: #014bac;
     border-bottom: 1px solid #ddd;
     margin: 0;
     padding: 8px 0;
@@ -4328,7 +4328,7 @@ a[href^="mailto"],a[href^="http"] {
 }
 
 .tt-ss {
-    color: #8dc73f;
+    color: #014bac;
     position: relative;
     padding-bottom: 2px;
     margin-bottom: 15px
@@ -5228,7 +5228,7 @@ a[href^="mailto"],a[href^="http"] {
 }
 
 .artistic .tt-no {
-    color: #f8992f
+    color: #014bac;
 }
 
 .artistic .tt-no:after {
